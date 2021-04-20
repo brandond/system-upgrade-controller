@@ -5,10 +5,10 @@ go 1.13
 require (
 	github.com/docker/distribution v2.7.1+incompatible
 	github.com/onsi/ginkgo v1.11.0
-	github.com/onsi/gomega v1.7.0
+	github.com/onsi/gomega v1.8.1
 	github.com/rancher/system-upgrade-controller/pkg/apis v0.0.0
 	github.com/rancher/wrangler v0.8.0
-	github.com/sirupsen/logrus v1.4.2
+	github.com/sirupsen/logrus v1.6.0
 	github.com/urfave/cli v1.22.2
 	k8s.io/api v0.20.6
 	k8s.io/apiextensions-apiserver v0.20.6
