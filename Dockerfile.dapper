@@ -1,5 +1,5 @@
 ARG KUBECTL=rancher/kubectl:v1.19.7
-FROM 1.15.10-alpine3.12
+FROM golang:1.15.10-alpine3.12
 
 COPY --from=${KUBECTL} /bin/kubectl /usr/local/bin/kubectl
 
