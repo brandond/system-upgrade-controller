@@ -1,7 +1,8 @@
 ARG KUBECTL=rancher/kubectl:v1.19.7
+FROM ${KUBECTL} AS kubectl
 FROM golang:1.15.10-alpine3.12
 
-COPY --from=${KUBECTL} /bin/kubectl /usr/local/bin/kubectl
+COPY --from=kubectl /bin/kubectl /usr/local/bin/kubectl
 
 ARG DAPPER_HOST_ARCH
 ENV ARCH $DAPPER_HOST_ARCH
